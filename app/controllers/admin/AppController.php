@@ -38,5 +38,4 @@ class AppController extends Controller {
 
         return $id;
     }
-
 }

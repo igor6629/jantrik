@@ -22,7 +22,7 @@ class CategoryController extends AppController {
             throw new \Exception('Страница не найдена', 404);
         }
 
-        // Хлебные крошки (путь к товару по категориям)
+        // Путь к товару по категориям
         $breadcrumbs = Breadcrumbs::getBreadcrumbs($category->id);
 
         // Вызовем модель Категории

@@ -19,7 +19,7 @@ class ProductController extends AppController {
             throw new \Exception('Страница не найдена', 404);
         }
 
-        // Хлебные крошки (путь к товару по категориям)
+        // Путь к товару по категориям
         $breadcrumbs = Breadcrumbs::getBreadcrumbs($product->category_id, $product->title);
 
         // Похожие товары

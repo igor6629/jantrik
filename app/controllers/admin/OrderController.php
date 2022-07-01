@@ -80,5 +80,4 @@ class OrderController extends AppController {
 
         redirect(ADMIN . '/order');
     }
-
 }

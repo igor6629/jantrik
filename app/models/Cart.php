@@ -62,7 +62,7 @@ class Cart extends AppModel {
         // Если в корзину добавили товар, который там уже есть - прибавляем его количество
         if (isset($_SESSION['cart'][$ID])) {
             $_SESSION['cart'][$ID]['qty'] += $qty;
-        }else {
+        } else {
             // Добавление товара в сессию
             $_SESSION['cart'][$ID] = [
               'qty' => $qty,
@@ -93,7 +93,7 @@ class Cart extends AppModel {
         if (isset($_SESSION['cart.currency'])) {
             if ($_SESSION['cart.currency']['base']) {
                 $_SESSION['cart.sum'] = $_SESSION['cart.sum'] * $curr->value;
-            }else {
+            } else {
                 $_SESSION['cart.sum'] = $_SESSION['cart.sum'] / $_SESSION['cart.currency']['value'] * $curr->value;
             }
 

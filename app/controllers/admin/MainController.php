@@ -18,5 +18,4 @@ class MainController extends AppController {
         $this->set(compact('countNewOrders', 'countReviews', 'countProducts', 'countCategories'));
 
     }
-
 }

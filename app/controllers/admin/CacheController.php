@@ -31,5 +31,4 @@ class CacheController extends AppController {
         $_SESSION['success'] = 'Выбранный кэш удалён';
         redirect();
     }
-
 }

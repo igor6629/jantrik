@@ -39,5 +39,4 @@ class Compare extends AppModel {
     public function deleteItem($id) {
         unset($_SESSION['compare'][$id]);
     }
-
 }

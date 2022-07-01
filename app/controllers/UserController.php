@@ -138,7 +138,6 @@ class UserController extends AppController {
     public function logoutAction() {
         // Если не пуста сессия
         if (isset($_SESSION['user'])) unset($_SESSION['user']);
-
         redirect(PATH);
     }
 
@@ -155,11 +154,11 @@ class UserController extends AppController {
             $data['role'] = $_SESSION['user']['role'];
             $user->load($data);
 
-            if(!$user->attributes['password']) {
+            if (!$user->attributes['password']) {
                 unset($user->attributes['password']);
                 unset($user->attributes['newpassword']);
                 unset($user->attributes['c-password']);
-            }else {
+            } else {
                 // Если был введен пароль, проверяем на коректность и обновляем
                 if ($user->checkPassword($user, $_SESSION['user']['login']))
                     $user->attributes["password"] = password_hash($user->attributes["newpassword"], PASSWORD_DEFAULT);
@@ -171,12 +170,12 @@ class UserController extends AppController {
                 unset($user->attributes['c-password']);
             }
 
-            if(!$user->validate($data) || !$user->checkUnique()) {
+            if (!$user->validate($data) || !$user->checkUnique()) {
                 $user->getErrors();
                 redirect();
             }
 
-            if($user->update('user', $_SESSION['user']['id'])) {
+            if ($user->update('user', $_SESSION['user']['id'])) {
                 foreach ($user->attributes as $k => $v) {
                     if ($k != 'password' && $k != 'newpassword' && $k != 'c-password') $_SESSION['user'][$k] = $v;
                 }

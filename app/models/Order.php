@@ -42,7 +42,7 @@ class Order extends AppModel {
             $sql_part .= "($order_id, $product_id, {$product['qty']}, '{$product['title']}', {$product['price']}),";
         }
 
-        // Обрежем , в коце
+        // Обрежем ',' в коце
         $sql_part = rtrim($sql_part, ',');
 
         // Формируем запрос в БД

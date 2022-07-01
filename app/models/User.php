@@ -159,12 +159,10 @@ class User extends AppModel {
                 return true;
             } else {
                 $_SESSION['error-recovery-code'] = 'Код введён неверно';
-
                 return false;
             }
         } else {
             $_SESSION['error-time'] = 'Срок действия кода истёк';
-
             redirect('recovery');
         }
     }
