@@ -9,7 +9,7 @@ return [
     'smtp_port' => '465',
     'smtp_protocol' => 'ssl',
     'smtp_login' => 'magazinjantrik@gmail.com',
-    'smtp_password' => 'nechepurenko',
+    'smtp_password' => 'password',
     'img_width' => 800,
     'img_height' => 800,
     'gallery_width' => 800,

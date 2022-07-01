@@ -17,7 +17,6 @@ class Pagination {
     public $countPages;
     public $uri;
 
-
     public function __construct($page, $perpage, $total) {
         $this->perpage = $perpage;
         $this->total = $total;

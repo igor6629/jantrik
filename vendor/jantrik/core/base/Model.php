@@ -72,7 +72,6 @@ abstract class Model {
         }
 
         $this->errors = $v->errors();
-
         return false;
     }
 

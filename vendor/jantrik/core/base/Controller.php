@@ -47,9 +47,7 @@ abstract class Controller {
     // Возвращение html ответа на ajax запрос
     public function loadView($view, $vars = []) {
         extract($vars);
-
         require APP . "/views/{$this->prefix}{$this->controller}/{$view}.php";
-
         die;
     }
 }

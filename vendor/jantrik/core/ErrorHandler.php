@@ -39,7 +39,7 @@ class ErrorHandler {
 
         if (DEBUG) {
             require_once WWW . '/errors/dev.php';
-        }else {
+        } else {
             require_once WWW . '/errors/prod.php';
         }
 

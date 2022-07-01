@@ -53,6 +53,7 @@
     function h($str){
         return htmlspecialchars($str, ENT_QUOTES);
     }
+    
     // Рейтинг товара
     function rating($param) {
         if ($param) : ?>

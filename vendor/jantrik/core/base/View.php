@@ -43,17 +43,17 @@ class View {
 
             // Поместим код вида в $content
             $content = ob_get_clean();
-        }else {
+        } else {
             throw new \Exception("Не найден вид: {$viewFile}", 500);
         }
 
         // Если шаблон не выключен пользователем, то подключим его
-        if(false !== $this->layout) {
+        if (false !== $this->layout) {
             $layoutFile = APP . "/views/layouts/{$this->layout}.php";
 
             if (is_file($layoutFile)) {
                 require_once $layoutFile;
-            }else {
+            } else {
                 throw new \Exception("Не найден шаблон: {$this->layout}", 500);
             }
         }

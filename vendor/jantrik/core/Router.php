@@ -39,13 +39,13 @@ class Router {
                 if (method_exists($controllerObject, $action)) {
                     $controllerObject->$action();
                     $controllerObject->getView();
-                }else {
+                } else {
                     throw new \Exception("Метод $controller::$action не найден", 404);
                 }
-            }else {
+            } else {
                 throw new \Exception("Контроллер $controller не найден", 404);
             }
-        }else {
+        } else {
             throw new \Exception("Страница не найдена", 404);
         }
     }
@@ -66,7 +66,7 @@ class Router {
 
                 if (!isset($route['prefix'])) {
                     $route['prefix'] = '';
-                }else {
+                } else {
                     $route['prefix'] .= '\\';
                 }
 
