@@ -127,9 +127,7 @@ class Menu{
     // Сформируем категорию в html код
     protected function catToTemplate($category, $tab, $id) {
         ob_start();
-
         require $this->tpl;
-
         return ob_get_clean();
     }
 }

@@ -150,6 +150,7 @@
     </div>
   </div>
   <!-- /.row -->
-</div><!-- /.container-fluid -->
+</div>
+<!-- /.container-fluid -->
 </section>
 <!-- /.content -->

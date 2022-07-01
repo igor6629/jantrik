@@ -92,15 +92,15 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <?php else:?>
-                                    <p class="text-danger">Пользователь не совершал покупки</p>
-                                <?php endif;?>
-                            </div>
+                            <?php else:?>
+                                <p class="text-danger">Пользователь не совершал покупки</p>
+                            <?php endif;?>
                         </div>
                     </div>
                 </div>
-                <!-- /.row -->
-            </div><!-- /.container-fluid -->
-        </section>
-        <!-- /.content -->
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
 

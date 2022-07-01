@@ -39,16 +39,13 @@ class Filter {
         }
 
         $filters = $this->getHtml();
-
         echo $filters;
     }
 
     // Получение HTML кода
     protected function getHtml() {
         ob_start();
-
         require $this->tpl;
-
         return ob_get_clean();
     }
 

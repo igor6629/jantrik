@@ -31,27 +31,27 @@
                                         <th>Название</th>
                                         <th>Описание</th>
                                         <th>Действие</th>
-                                        </tr
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Кэш категорий</td>
-                                            <td>Меню категорий на сайте. Кэшируется на 1 час</td>
-                                            <td class="text-center"><a href="<?=ADMIN;?>/cache/delete?key=category" class="delete"><i class="fas fa-trash-alt text-danger"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Кэш фильтров</td>
-                                            <td>Кэш фильтров и групп фильтров. Кэшируется на 1 час</td>
-                                            <td class="text-center"><a href="<?=ADMIN;?>/cache/delete?key=filter" class="delete"><i class="fas fa-trash-alt text-danger"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Кэш категорий</td>
+                                        <td>Меню категорий на сайте. Кэшируется на 1 час</td>
+                                        <td class="text-center"><a href="<?=ADMIN;?>/cache/delete?key=category" class="delete"><i class="fas fa-trash-alt text-danger"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Кэш фильтров</td>
+                                        <td>Кэш фильтров и групп фильтров. Кэшируется на 1 час</td>
+                                        <td class="text-center"><a href="<?=ADMIN;?>/cache/delete?key=filter" class="delete"><i class="fas fa-trash-alt text-danger"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- /.row -->
-        </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->

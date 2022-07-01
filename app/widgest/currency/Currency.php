@@ -52,9 +52,7 @@ class Currency {
     // Получает и формирует html разметку
     protected function getHtml() {
         ob_start();
-
         require_once $this->tpl;
-
         return ob_get_clean();
     }
 }
